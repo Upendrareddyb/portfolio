@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            </p>Full Stack Developer</p>
+         <h1>Hi,I'm <span>Upendra</span><br> Bukkasamudram</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="photo1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I’m a Full Stack Java Developer with around 3.5 years of experience building web applications that are fast, reliable, and user-friendly. I’ve worked across both frontend and backend — using technologies like Java, Spring Boot, React, Angular, and SQL — and I really enjoy bringing all the pieces together to build something useful.
+
+Over the years, I’ve worked on everything from internal tools to customer-facing platforms, helping teams ship features, fix bugs, and improve performance. I like the problem-solving aspect of backend development — figuring out how things should work under the hood — but I also care about how users interact with what we build.
+
+I’m always learning and love working on projects where I get to improve both the product and my skills. For me, good code isn’t just about logic — it’s about making life easier for the people using the software.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>full stack java</span><br>Python</li>
+                        <li><span>SQL</span><br>JavaScript</li>
+                        <li><span>AWS</span><br><Reactjs</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                       <li><span>Jun 2024 - current</span><br>full stack Developer at CGI Incorp</li>
+                       <li><span>July 2021- Dec 2022</span><br>software Developer-I at Wipro</li>
+                       <li><span>Sep 2020-june 2021</span><br> Software Developer at Hellinux Cloud</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>May 2024</span><br>Master's from University of Missouri-Kansas City</li>
+                        <li><span>July 2021</span><br>Bachelor's from G.pulla Reddy Engineering College</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Full Stack Developer</h2>
+                        <p>"Designing and developing end-to-end web applications with Java, Spring Boot, and modern frontend frameworks like React and Angular."</p>
+                        <a href="'#">Learn more</a>
+                </div>
+                <div>
+                        <h2>Java Developer</h2>
+                        <p>"Building robust, scalable backend services and full stack applications using Java and modern web technologies."</p>
+                        <a href="'#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="parking.jpg">
+                <div class="layer">
+                    <h3>Smart Parking Spot Availability & Booking System</h3>
+                    <p>Developed a full-stack web application to manage and book parking spots in real-time, aimed at solving urban parking inefficiencies for residential and commercial complexes.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="appointment-scheduling-solution.png">
+                <div class="layer">
+                    <h3>Schedule your Services</h3>
+                    <p>A web app that allows users (patients/customers) to book appointments with service providers (doctors, stylists, etc.), while providers manage their availability and view schedules.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="inventory-management.jpg">
+                <div class="layer">
+                    <h3>Inventory & Order Management System</h3>
+                    <p>Help small businesses manage their inventory, suppliers, sales, orders, and invoicing through a centralized web dashboard.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> bupendra992@example.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 8166736219</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="cover letter-FSD.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Upendra. Made with <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< upendra protfolio >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
